@@ -5,20 +5,20 @@ import { Link as linkS } from 'react-scroll';
 
 
 export const Nav= styled.nav`
-    background :${({scrollNav}) => (scrollNav ? 'transparent' : '#000')};
+    background :${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height:80px;
+    position: sticky;
+    top: 0;
     /*margin-top :-80px;*/
     display:flex;
     justify-content: center;
     align-items:center;
     font-size:1rem;
-    position: stikcy;
-    top:0;
     z-index: 10;
 
 
     @media screen and (max-width: 960px){
-        transition: 0.8 s all ease;
+        transition: 0.8s all ease;
     }
 `;
 
@@ -41,7 +41,7 @@ export const NavLogo= styled(linkR)`
     font-size: 1.5rem;
     display:flex;
     align-items: center;
-    margin-left:24px;
+    margin-left:20px;
     font-weight:bold;
     text-decoration: none;
 
@@ -80,7 +80,7 @@ export const NavItem= styled.li`
     height:80px;
 `;
 export const NavLinks= styled(linkS)`
-    color:#fff;
+    color:#010606;
     display:flex;
     align-items:center;
     text-decoration: none;

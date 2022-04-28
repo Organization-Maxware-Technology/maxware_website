@@ -1,10 +1,18 @@
 import React from 'react'
-import { Container, Form, FormButton, FormContent, FormH1, FormInput, FormLabel, FormWrap, Icon } from './ContactUsElements'
+import { Container,
+     Form,
+      FormButton, 
+      FormContent, 
+      FormH1, 
+      FormInput,
+       FormLabel,
+        FormWrap,
+         Icon } from './ContactUsElements'
 
 const ContactUs = () => {
   return (
     <>
-        <Container>
+        <Container backgroundcolor='#FF725e'>
             <FormWrap>
                 <Icon to='/' >Maxware</Icon>
                 <FormContent>

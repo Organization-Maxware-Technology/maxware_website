@@ -12,11 +12,10 @@ export const Container= styled.div`
     overflow : hidden;
     background: linear-gradient(
         108deg,
-        rgba(255, 114, 94) 0%;
-        rgba(253 ,132 ,114) 100%
+        rgba(1, 147, 86, 1) 0%;
+        rgba(10, 201, 122, 1) 100%
         
     );
-
 `;
 
 export const FormWrap= styled.div`
@@ -52,7 +51,7 @@ export const FormContent= styled.div`
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 480px){
         padding: 10px;
     }
 
@@ -100,8 +99,7 @@ export const FormInput= styled.input`
 
 export const FormButton= styled.button`
     background:#FF725E;
-    padding: 1 16px;
-    height:50px;
+    padding:16px 0;
     border: none;
     border-radius:4px;
     color: #fff;

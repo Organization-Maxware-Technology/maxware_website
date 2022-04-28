@@ -1,6 +1,8 @@
 import React, {useEffect, useState}from 'react'
 import {FaBars} from 'react-icons/fa'
-import { animateScroll as scroll } from 'react-scroll/modules';
+import logo from '../images/finlogo2.png'
+import { StickyNav } from 'react-js-stickynav'
+import { animateScroll as scroll } from 'react-scroll';
 import { Nav,
     NavbarContainer,
     NavLogo,
@@ -15,7 +17,7 @@ const Navbar = ({toggle}) => {
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav =() => {
-        if(Window.scrollY >= 80){
+        if(window.scrollY >= 80){
             setScrollNav(true)
         }else{
             setScrollNav(false)
@@ -33,11 +35,12 @@ const Navbar = ({toggle}) => {
 
 
     return (
-    <>
+    <>  
+        <StickyNav length='40'>
         <Nav scrollNav={scrollNav} >
             <NavbarContainer>
                 <NavLogo to='/' onClick={toggleHome}> 
-                    Maxware
+                <img src={logo} alt="logo" />
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars/>
@@ -52,10 +55,21 @@ const Navbar = ({toggle}) => {
                         offset={-80}>About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="discover">Discover</NavLinks>
+                        <NavLinks to="discover"
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
+                        >Discover</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services">Services</NavLinks>
+                        <NavLinks to="services"
+                        smooth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}>Services</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="solutions" 
@@ -71,6 +85,8 @@ const Navbar = ({toggle}) => {
                 </NavMenu>
             </NavbarContainer>
         </Nav>
+        </StickyNav>
+        
 
     </>
   )

@@ -1,8 +1,8 @@
 import img1 from '../images/svg-1.svg'
 import img2 from '../images/svg-2.svg'
 import img3 from '../images/svg-3.svg'
-import img7 from '../images/svg-7.svg'
-import img8 from '../images/svg-8.svg'
+//import img7 from '../images/svg-7.svg'
+//import img8 from '../images/svg-8.svg'
 
 export const homeObjOne= {
     id: 'about',
@@ -19,7 +19,6 @@ export const homeObjOne= {
     dark: true,
     primary: true,
     darkText: false
-
 };
 
 export const homeObjTwo= {
@@ -59,7 +58,7 @@ export const homeObjThree= {
 
 };
 
-export const homeObjFoor= {
+/*export const homeObjFoor= {
     id: 'solutions',
     lightBg: false,
     lightText: true,
@@ -76,11 +75,11 @@ export const homeObjFoor= {
     primary: true,
     darkText: false
 
-};
+};*/
 
 
-export const homeObjFive= {
-    id: 'discover',
+/*export const homeObjFive= {
+    id: 'contactUs',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -95,7 +94,7 @@ export const homeObjFive= {
     primary: false,
     darkText: true
 
-};
+};*/
 
 
 

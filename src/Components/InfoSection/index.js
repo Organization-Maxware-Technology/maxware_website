@@ -1,4 +1,7 @@
 import React from 'react'
+import Slide from 'react-reveal/Slide';
+import Jump from 'react-reveal/Jump';
+import RubberBand from 'react-reveal/RubberBand';
 import { Button } from '../ButtonElements';
 import { InfoContainer,
     InfoWrapper,
@@ -21,11 +24,14 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText,headline, darkTe
                 <InfoRow imgStart= {imgStart}>
                     <Column1>
                      <TextWrapper>
-                         <TopLine>{topLine}</TopLine>
-                         <Heading lightText= {lightText}>{headline }</Heading>
+                         <Slide>
+                         <RubberBand><TopLine>{topLine}</TopLine></RubberBand>
+                         <Jump><Heading lightText= {lightText}>{headline }</Heading></Jump>
                          <Subtitle darkText= {darkText}>{description}</Subtitle>
+                         </Slide>
                          <BtnWrap>
-                             <Button to='home'
+                             <Button 
+                             to='home'
                              smooth={true}
                              duration={500}
                              spy={true}
@@ -46,7 +52,7 @@ const InfoSection = ({lightBg, id, imgStart, topLine, lightText,headline, darkTe
                 </InfoRow>
             </InfoWrapper>
         </InfoContainer>
-
+        
     </>
   )
 }
