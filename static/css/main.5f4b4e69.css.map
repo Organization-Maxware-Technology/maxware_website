@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5f4b4e69.css","mappings":"AAAA,EACI,qBAAsB,CAGtB,6CAAgD,CAFhD,QAAS,CACT,SAEF","sources":["App.css"],"sourcesContent":["* {\n    box-sizing: border-box;\n    margin: 0;\n    padding: 0;\n    font-family: 'Encode Sans Expanded ', sans-serif;\n  }\n  "],"names":[],"sourceRoot":""}

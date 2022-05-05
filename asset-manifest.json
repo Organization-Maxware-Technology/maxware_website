@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/maxware_website/static/css/main.5f4b4e69.css",
+    "main.js": "/maxware_website/static/js/main.1fd5129e.js",
+    "static/media/video.mp4": "/maxware_website/static/media/video.52e8933b6c462b590514.mp4",
+    "static/media/svg-1.svg": "/maxware_website/static/media/svg-1.77bb050f6050f79e15897e2576e0655d.svg",
+    "static/media/svg-3.svg": "/maxware_website/static/media/svg-3.642938d94dac6881f36dbec304541c8a.svg",
+    "static/media/svg-2.svg": "/maxware_website/static/media/svg-2.197bbdbf5dc1319ca3047514a1e3f368.svg",
+    "static/media/svg-6.svg": "/maxware_website/static/media/svg-6.2d32eebcbd5aa18641bc10c08dd0fc00.svg",
+    "static/media/svg-4.svg": "/maxware_website/static/media/svg-4.1bda587c65b8c3ba578a95a5cd50a059.svg",
+    "static/media/finlogo2.png": "/maxware_website/static/media/finlogo2.6e4fedb37100a44cdf1d.png",
+    "static/media/svg-5.svg": "/maxware_website/static/media/svg-5.7be3649e3345d5d92ef2ee7f570854df.svg",
+    "index.html": "/maxware_website/index.html",
+    "main.5f4b4e69.css.map": "/maxware_website/static/css/main.5f4b4e69.css.map",
+    "main.1fd5129e.js.map": "/maxware_website/static/js/main.1fd5129e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f4b4e69.css",
+    "static/js/main.1fd5129e.js"
+  ]
+}
