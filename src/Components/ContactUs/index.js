@@ -1,5 +1,8 @@
 import React from 'react'
-import { Container,
+import Helmet from 'react-helmet';
+import { Fade } from 'react-reveal';
+import { 
+    Container,
      Form,
       FormButton, 
       FormContent, 
@@ -10,11 +13,14 @@ import { Container,
          Icon } from './ContactUsElements'
 
 const ContactUs = () => {
-  return (
+    
+    return (
     <>
-        <Container backgroundcolor='#FF725e'>
+        <Helmet bodyAttributes={{style: 'background-color : #ff725e'}}/>
+        <Container>
+        <Fade >
             <FormWrap>
-                <Icon to='/' >Maxware</Icon>
+                <Icon to='/' >Maxware Technology</Icon>
                 <FormContent>
                     <Form action='#'>
                         <FormH1>Get in touch</FormH1>
@@ -23,11 +29,12 @@ const ContactUs = () => {
                         <FormLabel htmlFor='for'> Email*</FormLabel>
                         <FormInput type='email' required/>
                         <FormLabel htmlFor='for'> Message*</FormLabel>
-                        <FormInput type='text' required/>
+                        <textarea rows="3" columns="8"/><br/>
                         <FormButton type='submit'>Contact</FormButton>
                     </Form>
                 </FormContent>
             </FormWrap>
+        </Fade >
         </Container>
 
     </>

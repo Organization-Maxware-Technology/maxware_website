@@ -5,7 +5,7 @@ import { Link as linkS } from 'react-scroll';
 
 
 export const Nav= styled.nav`
-    background :${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    background :${({scrollNav}) => (scrollNav ? '#fff' : 'transparent')};
     height:80px;
     position: sticky;
     top: 0;
@@ -19,6 +19,7 @@ export const Nav= styled.nav`
 
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
+        width:100%;
     }
 `;
 
@@ -69,6 +70,7 @@ export const NavMenu= styled.ul`
     list-style:none;
     text-align:center;
     margin-right:-22px;
+    
 
     @media screen and (max-width: 768px){
         display:none;

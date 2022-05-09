@@ -5,6 +5,9 @@ import Home from './Pages';
 import ContactUsPage from './Pages/ContactUs';
 import scrollreveal from 'scrollreveal';
 
+
+
+
 function App() {
   useEffect(()=> {
     const sr= scrollreveal({
@@ -34,8 +37,7 @@ function App() {
     <Router>
   
       <Routes>
-        
-        <Route path='/' element={<Home/>} exact/>
+        <Route path='/' element={<Home/>} exact/>        
         <Route path='/contactUs' element={<ContactUsPage/>} exact/>
       </Routes>
     </Router>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {Fragment, useState} from 'react'
 import Footer from '../Components/Footer';
 import HeroSection from '../Components/HeroSection';
 import InfoSection from '../Components/InfoSection';
@@ -19,8 +19,12 @@ const Home = () => {
 
   return (
     <>
+        <Fragment>
+            <Navbar toggle={toggle}/>
+            <div style={{overflowY:"scroll"}}></div>
+        </Fragment>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
+          
         <HeroSection/>
         <InfoSection {...homeObjOne}/>
         <InfoSection {...homeObjTwo}/>

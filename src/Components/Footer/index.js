@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Shake from 'react-reveal/Shake';
 import { animateScroll as scroll } from 'react-scroll/modules';
 import {FaPhoneAlt ,FaAngleRight, FaSearchLocation, FaRegEnvelope, FaClock}  from "react-icons/fa";
@@ -23,8 +23,10 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterWrap>
+        
             <FooterLinksContainer>
                 <FooterLinksWrapper>
+                
                     <FooterLinkItems>
                         <FooterLinkTitle>About Us</FooterLinkTitle>
                         <FooterLink to="/">MAXWARE TECHNOLOGY is a computer engineering
@@ -35,16 +37,17 @@ const Footer = () => {
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Catégories</FooterLinkTitle>
-                        <FooterLink to="/">
-
-                        <Shake><FaAngleRight/> Blogs </Shake> </FooterLink>
+                        <Shake >
+                        <FooterLink to="/" > <FaAngleRight /> Blogs</FooterLink>
+                        </Shake>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
                 <FooterLinksWrapper>
                     
                     <FooterLinkItems>
                         <FooterLinkTitle>Contact Info</FooterLinkTitle>
-                        <FooterLink to="/" animation={Shake}> <FaPhoneAlt /> +212 6 76 76 63 45</FooterLink>
+                        
+                        <FooterLink to="/" > <FaPhoneAlt /> +212 6 76 76 63 45</FooterLink>
                         <FooterLink to="/"> <FaSearchLocation/> imm 56 block D,maghrib Arabi,14000</FooterLink>
                         <FooterLink to="/"><FaRegEnvelope/> contact@maxware.ma</FooterLink>
                         <FooterLink to="/"><FaClock/> Office Hours 09H:30 - 18H:00</FooterLink>
@@ -59,6 +62,7 @@ const Footer = () => {
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
+            <hr color='#ff725e'/>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
                         Maxware Technology
@@ -81,6 +85,7 @@ const Footer = () => {
                     </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>
+            
         </FooterWrap>
     </FooterContainer>
   )
